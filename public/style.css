@@ -1,0 +1,30 @@
+body {
+  font-family: "Lato", Arial, "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.title {
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-weight: normal;
+  font-size: 25px;
+  color: rgba(60,74,96,0.5);
+  border-bottom: 3px solid rgba(0,0,0,0.1);
+}
+
+.practice-list {
+  margin-top: 10px;
+  list-style: disc;
+}
+
+.practice-list > li {
+  color: rgba(60,74,96,0.3);
+}
+
+.practice-list a {
+  color: #0a9b94;
+  text-decoration: none;
+}
+
+.practice-list a:hover {
+  text-decoration: underline;
+}
