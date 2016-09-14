@@ -1,20 +1,21 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-
+	"//1": "describes your app and its dependencies",
+	"//2": "https://docs.npmjs.com/files/package.json",
+	"//3": "updating this file will download and update your packages",
 	"name": "my-hyperdev-app",
 	"version": "0.0.1",
 	"description": "What am I about?",
-	"main": "server.js",
+	"main": "app.js",
 	"scripts": {
 		"start": "node server.js"
 	},
 	"dependencies": {
-    "express": "^4.12.4"
+		"express": "^5.0.0-alpha.2",
+		"riot": "^3.0.0-alpha.9",
+		"riot-router": "^0.8.0"
 	},
 	"engines": {
-		"node": "4.4.3"
+		"node": "4.5.0"
 	},
 	"repository": {
 		"type": "git",
