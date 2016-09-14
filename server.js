@@ -5,12 +5,6 @@
 var express = require('express');
 var app = express();
 
-var practice = [
-  'practice1',
-  'practice2',
-  'practice3'
-];
-
 // we've started you off with Express, 
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
 
@@ -20,12 +14,6 @@ app.use(express.static('public'));
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function (request, response) {
   response.sendFile(__dirname + '/views/index.html');
-});
-
-practice.map(function(name){
-  app.get('/' + name, function (request, response) {
-    response.sendFile(__dirname + '/views/' + name + '.html');
-  });
 });
 
 app.get("/dreams", function (request, response) {

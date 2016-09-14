@@ -9,6 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/riot/2.6.1/riot+compiler.min.js"></script>
+    <script src="/router.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -16,15 +21,16 @@
     </header>
     <main>
       <ul class="practice-list">
-	      <li><a href="/practice1">演習1</a></li>
-	      <li><a href="/practice2">演習2</a></li>
-	      <li><a href="/practice3">演習3</a></li>
+	      <li><a href="#practice1">演習1</a></li>
+	      <li><a href="#practice2">演習2</a></li>
+	      <li><a href="#practice3">演習3</a></li>
       </ul>
+      
+      <route></route>
     </main>
-    
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
-            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
-            crossorigin="anonymous"></script>
-    <script src="/client.js"></script>
+    <script src="/practice.tag" type="riot/tag"></script>
+    <script src="/home.tag" type="riot/tag"></script>
+    <script src="/app.js"></script>
+    <script src="/test.js"></script>
   </body>
 </html>
